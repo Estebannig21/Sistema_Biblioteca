@@ -22,7 +22,6 @@ public class MaterialBibliografico {
     }
 
     public double calcularMultas(int diasRetraso) {
-        // Método base: retorna 0 (debe ser sobrescrito en subclases)
         if (diasRetraso <= 0) {
             return 0.0;
         }
@@ -30,11 +29,11 @@ public class MaterialBibliografico {
     }
     
     public int getDiasPrestamo() {
-        return 0; // Debe ser sobrescrito en subclases
+        return 0;
     }
     
     public double getMultaPorDia() {
-        return 0.0; // Debe ser sobrescrito en subclases
+        return 0.0;
     }
 
     public void  mostrarInformacion() {

@@ -12,15 +12,14 @@ public class Main {
     
     // Cargar algunos materiales iniciales para demostración
     private static void cargarMaterialesIniciales() {
-        biblioteca.agregarMaterial(new Libro("El Quijote", "Miguel de Cervantes", 1605, "Novela", 863));
-        biblioteca.agregarMaterial(new Libro("Cien años de soledad", "Gabriel García Márquez", 1967, "Realismo Mágico", 417));
-        biblioteca.agregarMaterial(new Revista("National Geographic", "Varios autores", 2024, "Mensual", 156));
+        biblioteca.agregarMaterial(new Libro("El Quijo", "Miguel", 1605, "Novela", 863));
+        biblioteca.agregarMaterial(new Libro("100 años de soledad", "Gabriel Márquez", 1967, "Realismo Magico", 417));
+        biblioteca.agregarMaterial(new Revista("National Geographi", "Varios autores", 2024, "Mensual", 156));
         biblioteca.agregarMaterial(new Revista("Muy Interesante", "Varios autores", 2005, "Mensual", 89));
         biblioteca.agregarMaterial(new Pelicula("Inception", "Christopher Nolan", 2010, "Christopher Nolan", 148));
         biblioteca.agregarMaterial(new Pelicula("Nosferatu", "F.W. Murnau", 1922, "F.W. Murnau", 81));
     }
     
-    // Menú principal interactivo
     private static void mostrarMenuPrincipal() {
         boolean salir = false;
         
@@ -109,8 +108,7 @@ public class Main {
                 System.out.println("Tipo no válido.\n");
         }
     }
-    
-    // Agregar libro
+
     private static void agregarLibro(String titulo, String autor, int ano) {
         System.out.print("Género: ");
         String genero = scanner.nextLine();
