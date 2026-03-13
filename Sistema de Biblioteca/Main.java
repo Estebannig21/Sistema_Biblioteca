@@ -9,8 +9,7 @@ public class Main {
         mostrarMenuPrincipal();
         scanner.close();
     }
-    
-    // Cargar algunos materiales iniciales para demostración
+
     private static void cargarMaterialesIniciales() {
         biblioteca.agregarMaterial(new Libro("El Quijo", "Miguel", 1605, "Novela", 863));
         biblioteca.agregarMaterial(new Libro("100 años de soledad", "Gabriel Márquez", 1967, "Realismo Magico", 417));
